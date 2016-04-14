@@ -1,4 +1,25 @@
 @import "yoga";
+@import 'variables';
+@import 'base';
+@import 'top-nav';
+
+.main-content__container {
+  width: 60rem;
+  margin: auto;
+  color: $regular-text;
+}
+
+.main-content {
+  margin-top: 2rem;
+}
+
+.main-content__title {
+
+}
+
+.form-content {
+  box-shadow: 0.3rem 0.3rem 2rem $regular-text;
+}
 
 // Uncomment this for working with yoga prototyping
 // http://rtablada.github.io/yoga-sass/#mixin-yoga-prototype

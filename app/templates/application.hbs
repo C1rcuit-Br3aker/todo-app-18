@@ -1,3 +1,26 @@
-<h2 id="title">Welcome to Ember</h2>
+<header>
+  <div class="header-container">
+    <div class="header-container__items">
+      <p>{{fa-icon "bars" class="header-item"}}</p>
+      <h4 class="header-text header-item">Todos</h4>
+    </div>
+    <div class="header__menu">
+      <ul class="todo__menu">
+        {{outlet}}
+        <li class="todo-title">things with super long </li>
+        <li class="todo-title">things</li>
+        <li class="todo-title">List of stuff and things</li>
+      </ul>
+      <p class="add-list">Add New List</p>
+    </div>
+  </div>
+</header>
 
-{{outlet}}
+<div class="main-content__container">
+  <div class="main-content">
+    <div class="main-content__title">
+      <h2>Filler</h2>
+    </div>
+    <form class="form-content">Sample</form>
+  </div>
+</div>

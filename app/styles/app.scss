@@ -1,5 +1,5 @@
-@import "yoga";
 @import 'variables';
+@import 'yoga';
 @import 'base';
 @import 'top-nav';
 
@@ -14,7 +14,7 @@
 }
 
 .main-content__title {
-
+  margin-bottom: 0.5rem;
 }
 
 .form-content {

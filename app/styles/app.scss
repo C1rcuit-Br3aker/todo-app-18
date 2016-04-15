@@ -34,6 +34,19 @@
 .input-item {
   width: 100%;
   margin-top: 1rem;
+  border: 0;
+  border-bottom: 1px solid $placeholder-text;
+  color: $placeholder-text;
+  font-size: 1rem;
+}
+
+.submit-button {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+  border: 0;
+  background: none;
+  color: $brand-blue;
+  font-size: 1rem;
 }
 
 // Uncomment this for working with yoga prototyping

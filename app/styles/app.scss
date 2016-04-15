@@ -4,7 +4,7 @@
 @import 'top-nav';
 
 .main-content__container {
-  width: 60rem;
+  width: 75%;
   margin: auto;
   color: $regular-text;
 }
@@ -18,7 +18,22 @@
 }
 
 .form-content {
+  padding: 1rem;
   box-shadow: 0.3rem 0.3rem 2rem $regular-text;
+}
+
+.reminders-list {
+  margin: 0;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-item {
+  width: 100%;
+  margin-top: 1rem;
 }
 
 // Uncomment this for working with yoga prototyping

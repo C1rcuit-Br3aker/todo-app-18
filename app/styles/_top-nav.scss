@@ -15,24 +15,39 @@
 .nav__menu {
   display: flex;
   justify-content: space-between;
+  color: $title-white;
 }
 
 .todo__menu {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-  overflow: auto;
   margin: 0;
+  overflow: auto;
 }
 
 .todo-title {
-  min-width: 10rem;
+  min-width: 30%;
+  height: 2rem;
   margin: 0 1rem;
   padding: 0 1rem;
+  border-bottom: 2px solid transparent;
   text-align: center;
+
+  &:hover {
+    border-bottom: 2px solid $brand-yellow;
+  }
 }
 
 .add-list {
   min-width: 10rem;
+  height: 2rem;
+  margin: 0;
+  border-bottom: 2px solid transparent;
+  color: $title-white;
   text-align: center;
+
+  &:hover {
+    border-bottom: 3px solid $brand-yellow;
+  }
 }

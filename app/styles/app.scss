@@ -36,6 +36,7 @@
   margin-top: 1rem;
   border: 0;
   border-bottom: 1px solid $placeholder-text;
+  outline: none;
   color: $placeholder-text;
   font-size: 1rem;
 }
@@ -47,6 +48,7 @@
   background: none;
   color: $brand-blue;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 // Uncomment this for working with yoga prototyping

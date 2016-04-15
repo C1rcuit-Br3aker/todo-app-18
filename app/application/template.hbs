@@ -1,23 +1,14 @@
 <header>
-  <div class="header-container">
+  <div class="nav-container">
     <div class="header-container__items">
       <p>{{fa-icon "bars" class="header-item"}}</p>
       <h4 class="header-text header-item">Todos</h4>
-    </div>
-    <div class="header__menu">
-      <ul class="todo__menu">
-        {{#each model as |list|}}
-        <li class="todo-title">{{list.title}}</li>
-        {{/each}}
-      </ul>
-      {{#link-to "new"}}
-      <p class="add-list">Add New List</p>
-      {{/link-to}}
     </div>
   </div>
   </header>
 
   {{outlet}}
+
   {{!-- <div class="main-content__container">
     <div class="main-content">
       <div class="main-content__title">

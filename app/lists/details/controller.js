@@ -17,8 +17,10 @@ export default Ember.Controller.extend({
     });
   },
 
-  toggle() {
-    const done = document.querySelector(`.reminder-name`);
-    done.classList.toggle(`done`);
-  },
+  deleteList(list) {
+    if (window.confirm(`Are you sure?`)) {
+      list.destroyRecord();
+      this.transitionToRoute(`lists`);
+    }
+  }
 });

@@ -2,54 +2,8 @@
 @import 'yoga';
 @import 'base';
 @import 'top-nav';
-
-.main-content__container {
-  width: 75%;
-  margin: auto;
-  color: $regular-text;
-}
-
-.main-content {
-  margin-top: 2rem;
-}
-
-.main-content__title {
-  margin-bottom: 0.5rem;
-}
-
-.form-content {
-  padding: 1rem;
-  box-shadow: 0.3rem 0.3rem 2rem $regular-text;
-}
-
-.reminders-list {
-  margin: 0;
-}
-
-.input-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.input-item {
-  width: 100%;
-  margin-top: 1rem;
-  border: 0;
-  border-bottom: 1px solid $placeholder-text;
-  outline: none;
-  color: $placeholder-text;
-  font-size: 1rem;
-}
-
-.submit-button {
-  margin-top: 1.5rem;
-  padding: 0 1rem;
-  border: 0;
-  background: none;
-  color: $brand-blue;
-  font-size: 1rem;
-  cursor: pointer;
-}
+@import 'new';
+@import 'details';
 
 // Uncomment this for working with yoga prototyping
 // http://rtablada.github.io/yoga-sass/#mixin-yoga-prototype

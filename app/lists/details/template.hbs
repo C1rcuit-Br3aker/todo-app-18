@@ -1,0 +1,23 @@
+<div class="main-content__container">
+  <div class="main-content">
+    <div class="main-content__title">
+      <h2>{{model.title}}</h2>
+    </div>
+
+    <form class="form-content" {{action saveReminders model newReminder on="submit"}}>
+      <ul class="reminders-list">
+        {{#each model.reminders as |reminder|}}
+          <li class="reminders-items">
+            <input type="checkbox" {{action toggle}}>
+            <p class="reminder-name">{{reminder.name}}</p>
+          </li>
+        {{/each}}
+      </ul>
+
+      <div class="input-container__reminder">
+        {{input class="input-item" type=text value=newReminder.name placeholder="What do you want to do?"}}
+        <button class="submit-button">Accept</button>
+      </div>
+    </form>
+  </div>
+</div>

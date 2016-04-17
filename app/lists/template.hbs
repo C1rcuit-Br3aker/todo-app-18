@@ -4,8 +4,9 @@
       {{!--Each-loop to grab lists  --}}
       {{#each model as |list|}}
       <li class="todo-title">
-        {{!--Will need to link to individual forms  --}}
-        {{list.title}}
+        {{#link-to "lists.details" list.id}}
+          {{list.title}}
+        {{/link-to}}
       </li>
       {{/each}}
     </ul>

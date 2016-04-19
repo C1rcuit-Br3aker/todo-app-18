@@ -27,21 +27,22 @@
 }
 
 .todo-title {
-  min-width: 30%;
-  height: 2rem;
-  margin: 0 1rem;
-  padding: 0 1rem;
+  min-width: 34%;
   border-bottom: 2px solid transparent;
   text-align: center;
 
   &:hover {
     border-bottom: 2px solid $brand-yellow;
+    background: darken($brand-blue, 10%);
   }
+}
+
+.list-title {
+  vertical-align: middle;
 }
 
 .add-list {
   min-width: 10rem;
-  height: 2rem;
   margin: 0;
   border-bottom: 2px solid transparent;
   color: $title-white;
@@ -49,5 +50,6 @@
 
   &:hover {
     border-bottom: 3px solid $brand-yellow;
+    background: darken($brand-blue, 10%);
   }
 }

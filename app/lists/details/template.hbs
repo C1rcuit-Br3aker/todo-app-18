@@ -10,10 +10,21 @@
     <form class="form-content" {{action saveReminders model newReminder on="submit"}}>
       <ul class="reminders-list">
         {{#each model.reminders as |reminder|}}
+
           <li class="reminders-items">
-            {{input type="checkbox"}}
-            <p class="reminder-name">{{reminder.name}}</p>
+
+            <input type="checkbox" {{action markDone reminder on="click" preventDefault=false}}>
+
+            {{#if reminder.done}}
+              <p class="reminder-name done">{{reminder.name}}</p>
+
+            {{else}}
+
+              <p class="reminder-name">{{reminder.name}}</p>
+            {{/if}}
+
           </li>
+
         {{/each}}
       </ul>
 

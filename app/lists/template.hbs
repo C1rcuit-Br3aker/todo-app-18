@@ -5,15 +5,15 @@
       {{#each model as |list|}}
       <li class="todo-title">
         {{#link-to "lists.details" list.id}}
-          {{list.title}}
+          <p class="list-title">{{list.title}}</p>
         {{/link-to}}
       </li>
       {{/each}}
     </ul>
     {{!--Links to 'New' page  --}}
-    {{#link-to "lists.new"}}
-    <p class="add-list">Add New List</p>
-    {{/link-to}}</div>
+      {{#link-to "lists.new" class="add-list"}}
+        <p>Add New List</p>
+      {{/link-to}}</div>
 </nav>
 
 {{outlet}}

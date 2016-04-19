@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
     const list = this.store.createRecord(`list`, attr);
 
     list.save().then(() => {
-      this.transitionToRoute(`lists`);
+      this.transitionToRoute(`lists.details`, list.id);
     });
   },
 });

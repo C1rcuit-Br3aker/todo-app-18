@@ -26,9 +26,6 @@ export default Ember.Controller.extend({
   },
 
   markDone(reminder) {
-    // const x = reminder.set(`done`, !reminder.get(`done`));
-    const x = reminder.toggleProperty(`done`);
-    console.log(x);
-    reminder.save();
+    reminder.toggleProperty(`done`);
   },
 });
